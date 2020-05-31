@@ -110,46 +110,56 @@
             </div>
         </div>
 
-        <div class="row row-content">
-            <div class="col-sm-8">
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-8 offset-sm-2">
                 <div class="card">
                     <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
-                
-                    <div class="card-body">
-                        <form class="form-check">
-                            <label for="inline">Number of Guests</label>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                <label class="form-check-label" for="inlineRadio1">1</label>
+                    <div class="card-body my-3">
+                        <form id="reserve">
+                            <div class="form-group row">
+                                <label class="col-12 col-sm-4 col-md-2">Number of Guests</label>
+                                <div class="col-12 col-sm-8 col-md-10">
+                                    <div class="form-check-inline">
+                                        <input type="radio" class="form-check-inline" name="NumberOfGuests" id="NumberOfGuests1" value="1">
+                                        <label for="NumberOfGuests1">1</label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input type="radio" class="form-check-inline" name="NumberOfGuests" id="NumberOfGuests2" value="2">
+                                        <label for="NumberOfGuests1">2</label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input type="radio" class="form-check-inline" name="NumberOfGuests" id="NumberOfGuests3" value="3">
+                                        <label for="NumberOfGuests1">3</label> 
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input type="radio" class="form-check-inline" name="NumberOfGuests" id="NumberOfGuests4" value="4">
+                                        <label for="NumberOfGuests1">4</label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input type="radio" class="form-check-inline" name="NumberOfGuests" id="NumberOfGuests5" value="5">
+                                        <label for="NumberOfGuests1">5</label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input type="radio" class="form-check-inline" name="NumberOfGuests" id="NumberOfGuests6" value="6">
+                                        <label for="NumberOfGuests1">6</label>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                <label class="form-check-label" for="inlineRadio1">2</label>
+                            <div class="form-group row">
+                                <label class="col-12 col-sm-4 col-md-2">Date and Time</label>
+                                <div class="col-12 col-sm-4">
+                                    <input type="text" class="form-control" id="dateid" name="dateid" placeholder="Date" onfocus="(this.type='date')">
+                                </div>
+                                <div class="col-12 col-sm-4 offset-md-1">
+                                    <input type="text" class="form-control" id="timeid" name="timeid" placeholder="Time" onfocus="(this.type='time')">
+                                </div>
                             </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                <label class="form-check-label" for="inlineRadio1">3</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                <label class="form-check-label" for="inlineRadio1">4</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                <label class="form-check-label" for="inlineRadio1">5</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                <label class="form-check-label" for="inlineRadio1">6</label>
-                            </div>
-                        </form>
-                        <form class="form-check form-check-inline">
-                                <label for="inline">Date and Time</label>
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="Date">
-                            </div>
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="Time">
+                            <div class="form-group row">
+                                <div class="col-12 col-sm col-md offset-sm-2">
+                                    <button type="submit" class="btn btn-primary">
+                                        Reserve
+                                    </button>
+                                </div>
                             </div>
                         </form>
                     </div>
